@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="50%" stop-color="#111C2E"/>
+      <stop offset="100%" stop-color="#070B14"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E2D4A" stroke-width="1" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+
+  <!-- Factory Perspective Lines -->
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#1E2D4A" stroke-width="2"/>
+  <line x1="0" y1="520" x2="800" y2="520" stroke="#10B981" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="100" y1="600" x2="350" y2="450" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="700" y1="600" x2="450" y2="450" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- Robotic Arm Articulation Base -->
+  <rect x="360" y="420" width="80" height="30" rx="6" fill="#1E2D4A" stroke="#38BDF8" stroke-width="2"/>
+  <circle cx="400" cy="420" r="28" fill="#111C2E" stroke="#10B981" stroke-width="3"/>
+  
+  <!-- Lower Arm Joint -->
+  <line x1="400" y1="420" x2="320" y2="280" stroke="#94A3B8" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="320" cy="280" r="20" fill="#0B1220" stroke="#38BDF8" stroke-width="3"/>
+
+  <!-- Upper Arm Joint -->
+  <line x1="320" y1="280" x2="460" y2="180" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="460" cy="180" r="16" fill="#0B1220" stroke="#10B981" stroke-width="3"/>
+
+  <!-- Tool Head End Effector -->
+  <line x1="460" y1="180" x2="490" y2="230" stroke="#38BDF8" stroke-width="6"/>
+  <polygon points="480,230 500,230 490,250" fill="#10B981"/>
+
+  <!-- Inspection Laser Beam -->
+  <line x1="490" y1="250" x2="490" y2="430" stroke="#10B981" stroke-width="2" stroke-dasharray="4 2"/>
+  <ellipse cx="490" cy="430" rx="30" ry="8" fill="none" stroke="#10B981" stroke-width="1.5"/>
+
+  <!-- HUD Reticle -->
+  <circle cx="490" cy="250" r="45" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="6 3"/>
+  <text x="545" y="245" fill="#38BDF8" font-family="monospace" font-size="12">AI_VISION: DETECTED</text>
+  <text x="545" y="265" fill="#10B981" font-family="monospace" font-size="12">ACCURACY: 99.4%</text>
+
+  <!-- Telemetry Overlay Badges -->
+  <rect x="60" y="60" width="220" height="70" rx="12" fill="#111C2E" fill-opacity="0.8" stroke="#1E2D4A" stroke-width="1"/>
+  <circle cx="85" cy="95" r="8" fill="#10B981"/>
+  <text x="105" y="90" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">Edge Telemetry Stream</text>
+  <text x="105" y="110" fill="#94A3B8" font-family="monospace" font-size="11">OPC UA • 1,240 Samples/sec</text>
+
+  <rect x="520" y="60" width="220" height="70" rx="12" fill="#111C2E" fill-opacity="0.8" stroke="#1E2D4A" stroke-width="1"/>
+  <text x="540" y="90" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="13">OEE Optimization</text>
+  <text x="540" y="110" fill="#38BDF8" font-family="monospace" font-size="11">Status: +18.4% Efficiency</text>
+</svg>
